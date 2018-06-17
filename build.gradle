@@ -27,5 +27,5 @@ task clean(type: Delete) {
 }
 
 task updateJson(type: Exec) {
-    commandLine(projectDir.absolutePath + "/scripts/generate.sh")
+    commandLine(projectDir.absolutePath + "/app/scripts/generate.sh")
 }
