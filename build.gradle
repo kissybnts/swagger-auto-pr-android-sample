@@ -25,3 +25,7 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task updateJson(type: Exec) {
+    commandLine(projectDir.absolutePath + "/scripts/generate.sh")
+}
